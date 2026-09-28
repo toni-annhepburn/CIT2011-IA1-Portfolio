@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+header {
+    background-color: #1f3c5b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+nav {
+    background-color: #315b7d;
+    text-align: center;
+    padding: 15px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+}
+
+
+h2 {
+    color: #1f3c5b;
+}
+
+
+.profile-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.profile-info {
+    flex: 1;
+}
+
+
+.highlight {
+    color: #315b7d;
+    font-weight: bold;
+}
+
+
+ul {
+    line-height: 1.8;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+
+th {
+    background-color: #315b7d;
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #315b7d;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #1f3c5b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+
+    .table-container {
+        overflow-x: auto;
+    }
+}
